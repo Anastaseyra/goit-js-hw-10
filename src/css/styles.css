@@ -1,18 +1,188 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+ul {
+  list-style: none;
+}
+
+input {
+  outline: none;
+}
+
+.link {
+  font-size: 20px;
+  padding: 20px;
+}
+
+.list-item {
+  margin: 20px 0;
+}
+
+.container {
+  padding: 36px 156px;
+}
+
+#datetime-picker {
+  width: 272px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding: 6px 16px;
+  border-radius: 4px;
+  border: 1px solid;
+  border-color: #0000006b;
+}
+
+#datetime-picker:hover && #datetime-picker:enabled {
+  border-color: #000;
+}
+
+#datetime-picker:focus {
+  border-color: #4e75ff;
+}
+
+#datetime-picker:disabled {
+  color: #808080;
+  cursor: auto;
+}
+
+.container button {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 75px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border: none;
+  margin-left: 8px;
+}
+
+button[data-start]:disabled {
+  color: #989898;
+  background: #cfcfcf;
+}
+
+button[data-start]:enabled {
+  color: #fff;
+  background: #4e75ff;
+  cursor: pointer;
+}
+
+button[data-start]:enabled:hover {
+  background: #6c8cff;
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.field .value {
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.field .label {
+  font-size: 16px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+  margin: 0 auto;
+  max-width: 360px;
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.form-input {
+  border-radius: 4px;
+  border: 1px solid #808080;
+  height: 30px;
+  padding: 5px;
+  outline: none;
+}
+
+.form-input:hover {
+  border: 1px solid #000;
+}
+
+.form-input:active,
+.form-input:focus {
+  border: 1px solid #4e75ff;
+}
+
+.form-fieldset {
+  border-radius: 4px;
+  width: 362px;
+  padding: 24px 48px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+}
+
+.form-fieldset:hover {
+  border-color: #000000a1;
+}
+
+.fieldset-label {
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.fieldset-input {
+  border: 1px solid #757575;
+  border-radius: 14px;
+  width: 20px;
+  height: 20px;
+}
+
+.form-button {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 360px;
+  height: 40px;
+  background: #4e75ff;
+  margin-left: 0;
+  margin-top: 24px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+
+.form-button:hover {
+  background: #6c8cff;
+}
