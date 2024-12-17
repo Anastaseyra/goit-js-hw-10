@@ -49,18 +49,6 @@ input {
   cursor: auto;
 }
 
-.container button {
-  border-radius: 8px;
-  padding: 8px 16px;
-  width: 75px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  border: none;
-  margin-left: 8px;
-}
-
 button[data-start]:disabled {
   color: #989898;
   background: #cfcfcf;
@@ -125,6 +113,7 @@ button[data-start]:enabled:hover {
   height: 30px;
   padding: 5px;
   outline: none;
+  width: 360px;
 }
 
 .form-input:hover {
